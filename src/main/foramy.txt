@@ -1,0 +1,19 @@
+CREATE TABLE rep_users (
+                           user_id SERIAL PRIMARY KEY,
+                           first_name VARCHAR(50) NOT NULL,
+                           uname VARCHAR(50) NOT NULL,
+                           age INT NOT NULL,
+                           password VARCHAR(255) NOT NULL
+);
+CREATE TABLE files_info (
+                       id SERIAL PRIMARY KEY,
+                       originalFileName VARCHAR(255) NOT NULL,
+                       storageFileName VARCHAR(255) NOT NULL,
+                       size BIGINT NOT NULL,
+                       type VARCHAR(255) NOT NULL
+);
+CREATE TABLE cookie_users (
+                              uuid UUID PRIMARY KEY,
+                              id INTEGER NOT NULL
+);
+the database tables dear
